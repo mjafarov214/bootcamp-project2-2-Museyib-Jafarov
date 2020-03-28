@@ -1,4 +1,4 @@
-section{
+section {
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     max-width: 45%;
@@ -7,7 +7,7 @@ section{
     padding: 0 15px;
     text-align: center;
 }
-main{
+main {
     font-family: 'Roboto', sans-serif;
     margin: 15px 25%;
     border: 2px solid #005082;
@@ -17,37 +17,35 @@ main{
     display: flex;
     flex-direction: column;
     padding: 0 15px;
-    color:#000839;
+    color: #000839;
 }
-div{
+div {
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
-    
 }
-p{
+p {
     min-width: 250px;
-    width: 350PX;
+    width: 350px;
     font-weight: normal;
     font-size: 17.5px;
     height: 0px;
-
 }
-input{
+input {
     min-width: 250px;
     width: 50%;
     margin-top: 5px;
     border-radius: 5px;
 }
-select{
+select {
     min-width: 150px;
     width: 30%;
     margin-top: 5px;
     margin-right: 150px;
     border-radius: 5px;
 }
-#for-deposit{
-    color:#000839;
+#for-deposit {
+    color: #000839;
     background-color: #ffa41b;
     height: 30px;
     font-size: 16px;
@@ -55,12 +53,11 @@ select{
     margin: 15px 25%;
     border-radius: 5px;
 }
-.red-tag{
+.red-tag {
     width: 20px;
     color: red;
 }
-
-table{
+table {
     font-family: 'Roboto', sans-serif;
     border: 2px solid #ffa41b;
     margin: 10px 25%;
@@ -69,12 +66,9 @@ table{
     min-width: 550px;
     color: #000839;
 }
-
-tr,td{
+tr, td {
     border-bottom: 1px solid gray;
     padding: 5px 10px;
     width: 700px;
     text-align: center;
 }
-
-

@@ -46,11 +46,11 @@ class Application {
     }
     tableMaker(maxoffer, fv) {
         let finalResultTable = document.getElementById('final-result-table');
-        let tableHead = '<tr><th>Название Банка</th><th>Вклад</th><th>Процент</th><th>Итоговая сумма</th></tr>'
+        let tableHead = '<tr><th>Название Банка</th><th>Вклад</th><th>Процент</th><th>Итоговая сумма</th></tr>';
         let tableMain = '';
         for (let i = 0; i < maxoffer.length; i++) {
-            let tableRow = `<tr><td>${maxoffer[i].bankName}</td><td>${maxoffer[i].investName}</td><td>${maxoffer[i].incomeType}</td><td>${fv}</td></tr>`
-            tableMain += tableRow
+            let tableRow = `<tr><td>${maxoffer[i].bankName}</td><td>${maxoffer[i].investName}</td><td>${maxoffer[i].incomeType}</td><td>${fv}</td></tr>`;
+            tableMain += tableRow;
         }
         finalResultTable.innerHTML = `<table>${tableHead}${tableMain}</table>`;
     }
@@ -86,7 +86,7 @@ class Calculator {
             }
         });
         if (bankOffer.length == 0) {
-            alert('По вашему запросу предложений нету!')
+            alert('По вашему запросу предложений нету!');
         }
         return bankOffer;
     }
