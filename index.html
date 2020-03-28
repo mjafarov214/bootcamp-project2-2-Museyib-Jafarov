@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <title>Подбор оптимального вклада</title>
+</head>
+<body>
+    <header></header>
+    <section>
+        <h1>Подбор оптимального вклада</h1>
+    </section>
+    <main>
+        <div>
+            <p>Начальная сумма</p>
+            <input type="text" id="cv" placeholder="Сумма">
+            <article id="red-tag-one" class="red-tag"></article>
+        </div>
+        <div>
+            <p>Сумма ежемесячного пополнения</p>
+            <input type="text" id="refill" placeholder="Сумма">
+            <article id="red-tag-two" class="red-tag"></article>
+        </div>
+        <div>
+            <p>Срок вклада</p>
+            <input type="text" id="time" placeholder="Срок вклада">
+            <article id="red-tag-three" class="red-tag"></article>
+        </div>
+        <div>
+            <p>Валюта вклада</p>
+            <select type="text" id="valute">
+                <option>RUB</option>
+                <option>USD</option>
+              </select>
+        </div>
+        <button id="for-deposit">Подобрать</button>
+    </main>
+    <div id="final-result-table"></div>
+    <footer></footer>
+
+        <script src="task.js"></script>
+    
+</body>
+</html>
