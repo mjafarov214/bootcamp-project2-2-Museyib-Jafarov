@@ -6,6 +6,7 @@ class Application {
         });
     }
     RUN() {
+        document.getElementById('final-result-table').innerHTML = ``; 
         let deposit = new Deposit();
         document.getElementById("red-tag-three").innerHTML = '';
         document.getElementById("red-tag-two").innerHTML = '';
@@ -36,6 +37,9 @@ class Application {
             console.log(deposit);
             let calculator = new Calculator;
             let bestOffer = calculator.findOffer(deposit);
+            if(bestOffer.length===0){
+                return;
+            }
             console.log(bestOffer);
             let maxOffer = calculator.getMaxBank(bestOffer);
             console.log(maxOffer);
@@ -94,8 +98,8 @@ class Calculator {
         let maxPercent = bestOffer.reduce(function (prev, cur) {
             if (prev.incomeType > cur.incomeType) {
                 return prev;
-            }
-            return cur;
+            } 
+                return cur;
         });
         let maxPercentSame = bestOffer.filter(function (item) {
             return item.incomeType == maxPercent.incomeType;
