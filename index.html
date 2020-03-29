@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="task.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <title>Подбор оптимального вклада</title>
 </head>
+
 <body>
     <header></header>
     <section>
         <h1>Подбор оптимального вклада</h1>
     </section>
     <main>
-        <div>
+        <div class="customer-input">
             <p>Начальная сумма</p>
             <input type="text" id="cv" placeholder="Сумма">
-            <article id="red-tag-one" class="red-tag"></article>
+            <div id="red-tag-one" class="red-tag"></div>
         </div>
-        <div>
+        <div class="customer-input">
             <p>Сумма ежемесячного пополнения</p>
             <input type="text" id="refill" placeholder="Сумма">
-            <article id="red-tag-two" class="red-tag"></article>
+            <div id="red-tag-two" class="red-tag"></div>
         </div>
-        <div>
+        <div class="customer-input">
             <p>Срок вклада</p>
             <input type="text" id="time" placeholder="Срок вклада">
-            <article id="red-tag-three" class="red-tag"></article>
+            <div id="red-tag-three" class="red-tag"></div>
         </div>
-        <div>
+        <div class="customer-input">
             <p>Валюта вклада</p>
-            <select type="text" id="valute">
+            <select id="valute">
                 <option>RUB</option>
                 <option>USD</option>
             </select>
+            <div class="red-tag"></div>
         </div>
         <button id="for-deposit">Подобрать</button>
     </main>
     <div id="final-result-table"></div>
     <footer></footer>
 
-    <script src="task.js"></script>
+    <script src="offers.js"></script>
+    <script src="main.js"></script>
 
 </body>
+
 </html>
